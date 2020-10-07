@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  padding: 5px 15px;
+}
+
+#jumbotron {
+  background-color: #0055c4;
+  font-family: "Questrial", sans-serif;
+  height: 150px;
+  border-radius: 5px;
+  padding-left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.Navbar {
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

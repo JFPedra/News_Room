@@ -3,8 +3,13 @@ import "./styles.css";
 import { Switch, Route, NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 import Home from "./components/Home";
+import Deporte from "./components/Deportes";
+import Internacional from "./components/Internacional";
+import Politica from "./components/Politica";
+import Tecnologia from "./components/Tecnologia";
 
 export default function App() {
+  console.log(Home);
   return (
     <>
       <header id="jumbotron">
@@ -12,13 +17,14 @@ export default function App() {
       </header>
       <Navbar className="Navbar" bg="light" expand="lg">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="">Política</NavLink>
-        <NavLink to="">Internacional</NavLink>
-        <NavLink to="">Deportes</NavLink>
-        <NavLink to="">Tecnología</NavLink>
+        <NavLink to="/Politica">Política</NavLink>
+        <NavLink to="/Internacional">Internacional</NavLink>
+        <NavLink to="/Deporte">Deportes</NavLink>
+        <NavLink to="Tecnologia">Tecnología</NavLink>
       </Navbar>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/Deporte" component={Deporte} />
       </Switch>
     </>
   );

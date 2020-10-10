@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import React from "react";
 
-export function Home() {
+const Home = () => {
   return (
     <>
       <Container>
@@ -50,4 +50,5 @@ export function Home() {
       </Container>
     </>
   );
-}
+};
+export default Home;

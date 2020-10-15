@@ -1,7 +1,8 @@
-const reducer = (state, action) => {
+const initialState = {};
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "HOME":
-      state = action.payload;
+      state = action.news;
       break;
     default:
       break;

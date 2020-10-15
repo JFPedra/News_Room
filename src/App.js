@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import { Switch, Route, NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
-import Home from "./components/Home";
+import Home from "./containers/HomeContainer";
 import Deporte from "./components/Deportes";
 import Internacional from "./components/Internacional";
 import Politica from "./components/Politica";

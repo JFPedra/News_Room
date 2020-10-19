@@ -1,4 +1,4 @@
-const initialState = {};
+const initialState = null;
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "HOME":

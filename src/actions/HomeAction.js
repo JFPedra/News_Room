@@ -8,6 +8,9 @@ export const fetchHomeNews = (date) => {
     console.warn(date);
     fetch(`https://api.canillitapp.com/latest/${date}`)
       .then((news) => news.json())
-      .then((news) => dispatch(homeAction(news)));
+      .then((news) => {
+        console.warn("se enviaron props");
+        return dispatch(homeAction(news));
+      });
   };
 };

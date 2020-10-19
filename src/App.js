@@ -9,7 +9,7 @@ import Politica from "./components/Politica";
 import Tecnologia from "./components/Tecnologia";
 
 export default function App() {
-  console.log(Home);
+  //console.log(Home);
   return (
     <>
       <header id="jumbotron">

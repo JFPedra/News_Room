@@ -4,13 +4,16 @@ import Politica from "../components/Politica";
 import Tecnologia from "../components/Tecnologia";
 import { connect } from "react-redux";
 import { fetchCategoryNews } from "../actions/CategoryAction";
-import { clearAction } from "../actions/ClearAction";
+import clearAction from "../actions/ClearAction";
 
 const mapStatetoProps = (state) => ({ state });
 const mapActionstoProps = { fetchCategoryNews, clearAction };
 
-export default connect(mapStatetoProps, mapActionstoProps)(Deporte);
-/*export const InternacionalContainer = connect(
+export const DeporteContainer = connect(
+  mapStatetoProps,
+  mapActionstoProps
+)(Deporte);
+export const InternacionalContainer = connect(
   mapStatetoProps,
   mapActionstoProps
 )(Internacional);
@@ -21,4 +24,4 @@ export const PoliticaContainer = connect(
 export const TecnologiaContainer = connect(
   mapStatetoProps,
   mapActionstoProps
-)(Tecnologia)*/
+)(Tecnologia);

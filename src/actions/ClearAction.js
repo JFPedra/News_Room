@@ -1,3 +1,5 @@
-export const clearAction = () => ({
+const clearAction = () => ({
   type: "CLEAR"
 });
+
+export default clearAction;

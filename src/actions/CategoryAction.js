@@ -1,9 +1,7 @@
+import clearAction from "./ClearAction";
 export const categoryAction = (news) => ({
   type: "CATEGORY",
   news
-});
-export const clearAction = () => ({
-  type: "CLEAR"
 });
 
 export const fetchCategoryNews = (category) => {

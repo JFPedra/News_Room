@@ -1,9 +1,7 @@
+import clearAction from "./ClearAction";
 export const homeAction = (news) => ({
   type: "HOME",
   news
-});
-export const clearAction = () => ({
-  type: "CLEAR"
 });
 
 export const fetchHomeNews = (date) => {

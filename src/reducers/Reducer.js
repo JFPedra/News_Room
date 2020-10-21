@@ -4,6 +4,12 @@ const reducer = (state = initialState, action) => {
     case "HOME":
       state = action.news;
       break;
+    case "CATEGORY":
+      state = action.news;
+      break;
+    case "CLEAR":
+      state = null;
+      break;
     default:
       break;
   }

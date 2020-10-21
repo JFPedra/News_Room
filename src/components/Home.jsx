@@ -5,13 +5,13 @@ import Spinner from "./Spinner";
 
 class Home extends React.Component {
   componentDidMount() {
+    console.log("componenteHome montado y renderizado");
     const today = moment().format("YYYY-MM-DD");
-    if (!this.props.state) {
-      this.props.fetchHomeNews(today);
-      console.warn(today, "se despacho fetch");
-    }
+    this.props.fetchHomeNews(today);
+    console.warn(today, "se despacho fetch");
   }
   componentWillUnmount() {
+    console.log("componente Home Desmontado");
     this.props.clearAction();
   }
   render() {

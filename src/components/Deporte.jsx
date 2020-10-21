@@ -4,13 +4,13 @@ import Spinner from "./Spinner";
 
 class Deporte extends React.Component {
   componentDidMount() {
+    console.log("componenteDeporte montado y renderizado");
     const category = "5";
-    if (!this.props.state) {
-      this.props.fetchCategoryNews(category);
-      console.warn(category, "se despacho fetch");
-    }
+    this.props.fetchCategoryNews(category);
+    console.warn(category, "se despacho fetch");
   }
   componentWillUnmount() {
+    console.log("componenteDeporteDesmontado");
     this.props.clearAction();
   }
 

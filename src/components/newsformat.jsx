@@ -20,7 +20,7 @@ function Carditem(news) {
     </div>
   );
 }
-export default (news) => {
+export default (news, key) => {
   return (
     <>
       <Container className="my-3">

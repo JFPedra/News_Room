@@ -3,10 +3,7 @@ import "./styles.css";
 import { Switch, Route, NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 import Home from "./containers/HomeContainer";
-import Deporte from "./components/Deportes";
-import Internacional from "./components/Internacional";
-import Politica from "./components/Politica";
-import Tecnologia from "./components/Tecnologia";
+import DeporteContainer from "./containers/CategoryContainer";
 
 export default function App() {
   //console.log(Home);
@@ -24,7 +21,7 @@ export default function App() {
       </Navbar>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/Deporte" component={Deporte} />
+        <Route exact path="/Deporte" component={DeporteContainer} />
       </Switch>
     </>
   );

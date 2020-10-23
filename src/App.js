@@ -14,15 +14,25 @@ export default function App() {
   //console.log(Home);
   return (
     <>
-      <header id="jumbotron">
+      <header className="jumbotron h-75 mb-3 bg-primary">
         <h1 className="display-4">Las Noticias</h1>
       </header>
       <Navbar className="Navbar" bg="light" expand="lg">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/Politica">Política</NavLink>
-        <NavLink to="/Internacional">Internacional</NavLink>
-        <NavLink to="/Deporte">Deportes</NavLink>
-        <NavLink to="Tecnologia">Tecnología</NavLink>
+        <NavLink to="/" className="nav-link text-info">
+          Home
+        </NavLink>
+        <NavLink to="/Politica" className="nav-link text-info">
+          Política
+        </NavLink>
+        <NavLink to="/Internacional" className="nav-link text-info">
+          Internacional
+        </NavLink>
+        <NavLink to="/Deporte" className="nav-link text-info">
+          Deportes
+        </NavLink>
+        <NavLink to="Tecnologia" className="nav-link text-info">
+          Tecnología
+        </NavLink>
       </Navbar>
       <Switch>
         <Route exact path="/" component={Home} />

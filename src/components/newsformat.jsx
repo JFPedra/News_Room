@@ -47,20 +47,20 @@ function CardItemPrincipal(news) {
   return (
     <div>
       <Card style={{ width: "100%" }}>
-        <Card.Img variant="top" src={news.img_url} />
+        <Card.Img variant="top" src={news.img_url} alt="imagen de noticia" />
         <Card.Body className="d-flex flex-column justify-content-between">
           <Card.Title>
-            <Badge variant="dark">{news.source_name}</Badge>
+            <Badge variant="secondary">{news.source_name}</Badge>
           </Card.Title>
           <Card.Subtitle>{news.title}</Card.Subtitle>
           <p>{moment.unix(news.date).format("LT")}</p>
           <a
-            className="d-flex"
+            className="d-flex card-link"
             href={news.url}
             target="_blank"
             onclick="window.open(this.href, this.target)"
           >
-            <Button variant="primary" className="ml-auto btn-sm">
+            <Button variant="info" className="ml-auto btn-sm">
               Ver más
             </Button>
           </a>
@@ -80,22 +80,26 @@ function CardItemScondary(news) {
         <Container fluid className="m-0 p-0">
           <Row className="m-0 p-0">
             <Col md={12} lg={4} className="m-0 p-0">
-              <Card.Img variant="top" src={news.img_url} />
+              <Card.Img
+                variant="top"
+                src={news.img_url}
+                alt="imagen de noticia"
+              />
             </Col>
             <Col className="m-0 p-0">
               <Card.Body className=" py-lg-1 d-flex flex-column justify-content-between">
                 <Card.Title className="mx-lg-1">
-                  <Badge variant="dark">{news.source_name}</Badge>
+                  <Badge variant="secondary">{news.source_name}</Badge>
                 </Card.Title>
                 <Card.Subtitle>{news.title}</Card.Subtitle>
                 <p>{moment.unix(news.date).format("LT")}</p>
                 <a
-                  className="d-flex"
+                  className="d-flex card-link"
                   href={news.url}
                   target="_blank"
                   onclick="window.open(this.href, this.target)"
                 >
-                  <Button variant="primary" className="ml-auto btn-sm">
+                  <Button variant="info" className="ml-auto btn-sm">
                     Ver más
                   </Button>
                 </a>
@@ -111,20 +115,20 @@ function Carditem(news) {
   return (
     <div>
       <Card style={{ width: "100%" }}>
-        <Card.Img variant="top" src={news.img_url} />
+        <Card.Img variant="top" src={news.img_url} alt="imagen de noticia" />
         <Card.Body className="d-flex flex-column justify-content-between">
           <Card.Title>
-            <Badge variant="dark">{news.source_name}</Badge>
+            <Badge variant="secondary">{news.source_name}</Badge>
           </Card.Title>
           <Card.Subtitle>{news.title}</Card.Subtitle>
           <p>{moment.unix(news.date).format("LT")}</p>
           <a
-            className="d-flex"
+            className="d-flex card-link"
             href={news.url}
             target="_blank"
             onclick="window.open(this.href, this.target)"
           >
-            <Button variant="primary" className="ml-auto btn-sm">
+            <Button variant="info" className="ml-auto btn-sm">
               Ver más
             </Button>
           </a>

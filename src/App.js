@@ -14,23 +14,23 @@ export default function App() {
   //console.log(Home);
   return (
     <>
-      <header className="jumbotron h-75 mb-3 bg-primary">
-        <h1 className="display-4">Las Noticias</h1>
+      <header id="jumbotron" className="jumbotron h-75 mb-3 py-4 bg-primary">
+        <h1 id="jumbotron">Las Noticias</h1>
       </header>
       <Navbar className="Navbar" bg="light" expand="lg">
-        <NavLink to="/" className="nav-link text-info">
+        <NavLink id="info" to="/" className="nav-link text-info">
           Home
         </NavLink>
-        <NavLink to="/Politica" className="nav-link text-info">
+        <NavLink id="info" to="/Politica" className="nav-link text-info">
           Política
         </NavLink>
-        <NavLink to="/Internacional" className="nav-link text-info">
+        <NavLink id="info" to="/Internacional" className="nav-link text-info">
           Internacional
         </NavLink>
-        <NavLink to="/Deporte" className="nav-link text-info">
+        <NavLink id="info" to="/Deporte" className="nav-link text-info">
           Deportes
         </NavLink>
-        <NavLink to="Tecnologia" className="nav-link text-info">
+        <NavLink id="info" to="Tecnologia" className="nav-link text-info">
           Tecnología
         </NavLink>
       </Navbar>

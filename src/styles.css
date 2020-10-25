@@ -8,15 +8,15 @@ body {
 }
 
 #jumbotron {
-  font-family: "Questrial", sans-serif;
-  height: 150px;
-  border-radius: 5px;
-  padding-left: 10px;
+  font-family: "Cinzel", serif;
+  font-size: 200%;
+}
+#title {
+  font-family: "Cormorant Garamond", serif;
+}
 
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+#info {
+  font-family: "Josefin Slab", serif;
 }
 
 .Navbar {

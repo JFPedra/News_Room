@@ -10,8 +10,8 @@ export default (news) => {
           <Col sm={12} lg={6} className="mb-md-3 pl-lg-0">
             {CardItemPrincipal(news[0])}
           </Col>
-          <Col sm={12} lg={6} className="px-lg-0">
-            <Container className="pr-lg-0">
+          <Col sm={12} lg={6} className="px-0">
+            <Container fluid className="pr-lg-0">
               <Row>
                 <Col md={4} lg={12} className="my-lg-1">
                   {CardItemScondary(news[1])}
@@ -27,13 +27,13 @@ export default (news) => {
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Row className="my-3">
+      <Container fluid className="mx-0 px-lg-0">
+        <Row className="my-3 px-md-3">
           <Col>{Carditem(news[4])}</Col>
           <Col>{Carditem(news[5])}</Col>
           <Col>{Carditem(news[6])}</Col>
         </Row>
-        <Row>
+        <Row className="px-md-3">
           <Col>{Carditem(news[7])}</Col>
           <Col>{Carditem(news[8])}</Col>
           <Col>{Carditem(news[9])}</Col>
@@ -52,7 +52,7 @@ function CardItemPrincipal(news) {
           <Card.Title>
             <Badge variant="secondary">{news.source_name}</Badge>
           </Card.Title>
-          <Card.Subtitle>{news.title}</Card.Subtitle>
+          <Card.Subtitle id="title">{news.title}</Card.Subtitle>
           <p>{moment.unix(news.date).format("LT")}</p>
           <a
             className="d-flex card-link"
@@ -60,7 +60,7 @@ function CardItemPrincipal(news) {
             target="_blank"
             onclick="window.open(this.href, this.target)"
           >
-            <Button variant="info" className="ml-auto btn-sm">
+            <Button id="info" variant="info" className="ml-auto btn-sm">
               Ver más
             </Button>
           </a>
@@ -91,7 +91,7 @@ function CardItemScondary(news) {
                 <Card.Title className="mx-lg-1">
                   <Badge variant="secondary">{news.source_name}</Badge>
                 </Card.Title>
-                <Card.Subtitle>{news.title}</Card.Subtitle>
+                <Card.Subtitle id="title">{news.title}</Card.Subtitle>
                 <p>{moment.unix(news.date).format("LT")}</p>
                 <a
                   className="d-flex card-link"
@@ -99,7 +99,7 @@ function CardItemScondary(news) {
                   target="_blank"
                   onclick="window.open(this.href, this.target)"
                 >
-                  <Button variant="info" className="ml-auto btn-sm">
+                  <Button id="info" variant="info" className="ml-auto btn-sm">
                     Ver más
                   </Button>
                 </a>
@@ -120,7 +120,7 @@ function Carditem(news) {
           <Card.Title>
             <Badge variant="secondary">{news.source_name}</Badge>
           </Card.Title>
-          <Card.Subtitle>{news.title}</Card.Subtitle>
+          <Card.Subtitle id="title">{news.title}</Card.Subtitle>
           <p>{moment.unix(news.date).format("LT")}</p>
           <a
             className="d-flex card-link"
@@ -128,7 +128,7 @@ function Carditem(news) {
             target="_blank"
             onclick="window.open(this.href, this.target)"
           >
-            <Button variant="info" className="ml-auto btn-sm">
+            <Button id="info" variant="info" className="ml-auto btn-sm">
               Ver más
             </Button>
           </a>

@@ -1,4 +1,4 @@
-import clearAction from "./ClearAction";
+import cleanAction from "./CleanAction";
 export const homeAction = (news) => ({
   type: "HOME",
   news
@@ -7,7 +7,7 @@ export const homeAction = (news) => ({
 export const fetchHomeNews = (date) => {
   return (dispatch) => {
     console.warn(date);
-    dispatch(clearAction);
+    dispatch(cleanAction);
     fetch(`https://api.canillitapp.com/latest/${date}`)
       .then((news) => news.json())
       .then((news) => {

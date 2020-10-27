@@ -4,10 +4,10 @@ import Politica from "../components/Politica";
 import Tecnologia from "../components/Tecnologia";
 import { connect } from "react-redux";
 import { fetchCategoryNews } from "../actions/CategoryAction";
-import clearAction from "../actions/ClearAction";
+import cleanAction from "../actions/CleanAction";
 
 const mapStatetoProps = (state) => ({ state });
-const mapActionstoProps = { fetchCategoryNews, clearAction };
+const mapActionstoProps = { fetchCategoryNews, cleanAction };
 
 export const DeporteContainer = connect(
   mapStatetoProps,

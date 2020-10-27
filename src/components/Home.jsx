@@ -12,7 +12,7 @@ class Home extends React.Component {
   }
   componentWillUnmount() {
     console.log("componente Home Desmontado");
-    this.props.clearAction();
+    this.props.cleanAction();
   }
   render() {
     const news = this.props.state;

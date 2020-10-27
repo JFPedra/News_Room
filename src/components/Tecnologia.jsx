@@ -11,7 +11,7 @@ class Tecnologia extends React.Component {
   }
   componentWillUnmount() {
     console.log("componenteTecnologiaDesmontado");
-    this.props.clearAction();
+    this.props.cleanAction();
   }
 
   render() {

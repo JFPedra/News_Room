@@ -11,7 +11,7 @@ class Internacional extends React.Component {
   }
   componentWillUnmount() {
     console.log("componenteInternacional Desmontado");
-    this.props.clearAction();
+    this.props.cleanAction();
   }
 
   render() {

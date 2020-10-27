@@ -11,7 +11,7 @@ class Deporte extends React.Component {
   }
   componentWillUnmount() {
     console.log("componenteDeporteDesmontado");
-    this.props.clearAction();
+    this.props.cleanAction();
   }
 
   render() {

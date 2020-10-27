@@ -11,7 +11,7 @@ class Politica extends React.Component {
   }
   componentWillUnmount() {
     console.log("componentePoliticaDesmontado");
-    this.props.clearAction();
+    this.props.cleanAction();
   }
 
   render() {
